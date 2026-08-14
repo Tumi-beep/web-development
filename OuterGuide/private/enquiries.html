@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Trip | OuterGuide</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>OuterGuide</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="enquiry-form-section">
+            <h2>Start Your Journey</h2>
+            <p>Fill out the form below, and one of our travel experts will get back to you with a custom quote within 24 hours.</p>
+            
+            <form action="#" method="POST" class="enquiry-form">
+                <label for="destination">Dream Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="e.g., Kyoto, Japan" required>
+
+                <label for="travel-dates">Estimated Travel Dates:</label>
+                <input type="date" id="travel-dates" name="travel-dates">
+
+                <label for="travelers">Number of Travelers:</label>
+                <input type="number" id="travelers" name="travelers" min="1" required>
+
+                <label for="budget">Estimated Budget ($):</label>
+                <input type="text" id="budget" name="budget" placeholder="e.g., $5,000">
+
+                <label for="details">Additional Details or Requests:</label>
+                <textarea id="details" name="details" rows="4"></textarea>
+
+                <button type="submit" class="submit-btn">Request a Quote</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 OuterGuide Travel Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
