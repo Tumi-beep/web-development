@@ -1,59 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Book a Trip | OuterGuide</title>
-    <link rel="stylesheet" href="../Css/style.css">
+
+    <!-- CONNECTS THIS PAGE TO CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
+
+    <!-- HEADER -->
+
     <header>
+
         <div class="logo">
             <h1>OuterGuide</h1>
         </div>
+
         <nav>
+
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="enquiries.html">Enquiries</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="enquiries.html" class="active">Enquiries</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
             </ul>
+
         </nav>
+
     </header>
 
+
+    <!-- MAIN -->
+
     <main>
+
         <section class="enquiry-form-section">
+
             <h2>Start Your Journey</h2>
-            <p>Fill out the form below, and one of our travel experts will get back to you with a custom quote within 24 hours.</p>
-            
-            <form action="#" method="POST" class="enquiry-form">
-                <label for="destination">Dream Destination:</label>
-                <input type="text" id="destination" name="destination" placeholder="e.g., Kyoto, Japan" required>
 
-                <label for="travel-dates">Estimated Travel Dates:</label>
-                <input type="date" id="travel-dates" name="travel-dates">
+            <p>
+                Tell us a little bit about your dream trip, and our
+                travel experts will get back to you within 24 hours
+                with a custom proposal.
+            </p>
 
-                <label for="travelers">Number of Travelers:</label>
-                <input type="number" id="travelers" name="travelers" min="1" required>
 
-                <label for="budget">Estimated Budget ($):</label>
-                <input type="text" id="budget" name="budget" placeholder="e.g., $5,000">
+            <form class="enquiry-form" action="#" method="POST">
 
-                <label for="details">Additional Details or Requests:</label>
-                <textarea id="details" name="details" rows="4"></textarea>
 
-                <button type="submit" class="submit-btn">Request a Quote</button>
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                >
+
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="john@example.com"
+                    required
+                >
+
+
+                <label for="destination">
+                    Desired Destination
+                </label>
+
+                <input
+                    type="text"
+                    id="destination"
+                    name="destination"
+                    placeholder="e.g., Kyoto, Japan"
+                >
+
+
+                <label for="dates">
+                    Estimated Travel Dates
+                </label>
+
+                <input
+                    type="text"
+                    id="dates"
+                    name="dates"
+                    placeholder="e.g., October 2026"
+                >
+
+
+                <label for="details">
+                    Tell us about your ideal trip
+                </label>
+
+                <textarea
+                    id="details"
+                    name="details"
+                    rows="5"
+                    placeholder="What are you hoping to see and do?"
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Send Enquiry
+                </button>
+
+
             </form>
+
         </section>
+
     </main>
 
+
+    <!-- FOOTER -->
+
     <footer>
+
         <div class="footer-content">
-            <p>&copy; 2026 OuterGuide Travel Agency. All rights reserved.</p>
+
+            <p>
+                &copy; 2026 OuterGuide Travel Agency.
+                All rights reserved.
+            </p>
+
         </div>
+
     </footer>
+
 
 </body>
 </html>
