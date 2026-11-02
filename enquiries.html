@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OuterGuide Travel - Enquiry</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">OuterGuide Travel</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Travel Enquiry Form</h2>
+        <p>Planning your next intercontinental adventure? Request a custom quote below.</p>
+        
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="interest">Type of Travel:</label>
+            <select id="interest" name="interest">
+                <option value="multi-continent">Multi-Continent Leisure Tour</option>
+                <option value="corporate">Corporate Intercontinental Travel</option>
+                <option value="visa-help">Visa & Routing Assistance Only</option>
+            </select>
+
+            <label for="message">Desired Destinations & Dates:</label>
+            <textarea id="message" name="message" rows="5" placeholder="E.g., Flying from Cape Town to Tokyo next October..." required></textarea>
+
+            <button type="submit">Request Travel Quote</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 OuterGuide Travel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
